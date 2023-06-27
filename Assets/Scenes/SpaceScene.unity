@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 35b9e3ef113eb2441acff9e86af4ec4b, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 209e59a1e8615ed4a9ae8f343ad78222, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -3857,7 +3857,6 @@ GameObject:
   - component: {fileID: 1221327115}
   - component: {fileID: 1221327114}
   - component: {fileID: 1221327113}
-  - component: {fileID: 1221327116}
   m_Layer: 5
   m_Name: Space
   m_TagString: Untagged
@@ -3929,19 +3928,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 930465453}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1221327116}
-        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1221327114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3962,7 +3949,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a1f766d3b12582440be160a26685daee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9283d5ce9d20544fa3fd3acc4901e6e, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3980,19 +3967,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221327111}
   m_CullTransparentMesh: 1
---- !u!114 &1221327116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221327111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17d507801441db4498ae7ead5411fcef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneNumber: 3
 --- !u!1 &1276877198
 GameObject:
   m_ObjectHideFlags: 0
@@ -6928,6 +6902,7 @@ GameObject:
   - component: {fileID: 1909462375}
   - component: {fileID: 1909462374}
   - component: {fileID: 1909462373}
+  - component: {fileID: 1909462376}
   m_Layer: 5
   m_Name: Night
   m_TagString: Untagged
@@ -6999,7 +6974,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1724173183}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1909462376}
+        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1909462374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7038,6 +7025,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909462371}
   m_CullTransparentMesh: 1
+--- !u!114 &1909462376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909462371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d507801441db4498ae7ead5411fcef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNumber: 1
 --- !u!1 &1933110656
 GameObject:
   m_ObjectHideFlags: 0
@@ -8166,11 +8166,11 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129718160}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: e66f8cbd275fa514baa104207c5cde60, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 7a06ba97675f4d4409dd9128efe20400, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: d4b40f003c87498488d5298c634fa905, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 251c52c7a0ff4cc48bcc8cc4f537ac99, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
@@ -8179,12 +8179,14 @@ VideoPlayer:
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
   m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1

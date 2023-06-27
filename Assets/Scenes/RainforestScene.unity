@@ -3857,6 +3857,7 @@ GameObject:
   - component: {fileID: 1221327115}
   - component: {fileID: 1221327114}
   - component: {fileID: 1221327113}
+  - component: {fileID: 1221327116}
   m_Layer: 5
   m_Name: Space
   m_TagString: Untagged
@@ -3925,7 +3926,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1221327114}
+  m_TargetGraphic: {fileID: 930465453}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -3967,6 +3968,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221327111}
   m_CullTransparentMesh: 1
+--- !u!114 &1221327116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221327111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d507801441db4498ae7ead5411fcef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNumber: 3
 --- !u!1 &1276877198
 GameObject:
   m_ObjectHideFlags: 0
@@ -6902,6 +6916,7 @@ GameObject:
   - component: {fileID: 1909462375}
   - component: {fileID: 1909462374}
   - component: {fileID: 1909462373}
+  - component: {fileID: 1909462376}
   m_Layer: 5
   m_Name: Night
   m_TagString: Untagged
@@ -6973,7 +6988,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1724173183}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1909462376}
+        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1909462374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7012,6 +7039,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909462371}
   m_CullTransparentMesh: 1
+--- !u!114 &1909462376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909462371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d507801441db4498ae7ead5411fcef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNumber: 1
 --- !u!1 &1933110656
 GameObject:
   m_ObjectHideFlags: 0
@@ -8549,7 +8589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a1f766d3b12582440be160a26685daee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9283d5ce9d20544fa3fd3acc4901e6e, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
