@@ -7,6 +7,9 @@ public class MusicController : MonoBehaviour
 
     public AudioSource[] audioSources;
 
+    private int currentMusicIndex = 0;
+    private float currentPlaybackTime = 0f;
+
     private void Awake()
     {
         if (instance == null)
@@ -27,7 +30,14 @@ public class MusicController : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        PlayMusic(0);
+        AudioSource currentAudioSource = audioSources[currentMusicIndex];
+
+        currentPlaybackTime = currentAudioSource.time;
+
+        PlayMusic(currentMusicIndex);
+
+        currentAudioSource.time = currentPlaybackTime;
+        currentAudioSource.Play();
     }
 
     public void PlayMusic(int index)
@@ -39,8 +49,12 @@ public class MusicController : MonoBehaviour
 
         if (index >= 0 && index < audioSources.Length)
         {
-            audioSources[index].Play();
+            AudioSource audioSource = audioSources[index];
+
+            audioSource.time = currentPlaybackTime;
+            audioSource.Play();
+
+            currentMusicIndex = index;
         }
     }
 }
-
