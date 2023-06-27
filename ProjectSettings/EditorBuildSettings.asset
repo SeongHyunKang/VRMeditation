@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NightScene.unity
     guid: fcfda846f69595843a5fe75d75ca0dac
+  - enabled: 1
+    path: Assets/Scenes/RainforestScene.unity
+    guid: 37a12dec9cec9b342986f74a683b490c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 62ac0bd81474b5e45ba398c385070922, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 246cc7759c8f1f34f820031684757a9c, type: 2}
