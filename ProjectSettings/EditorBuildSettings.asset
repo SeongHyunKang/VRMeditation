@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpaceScene.unity
     guid: d5afdb57316d13b42b9583421ae9f602
+  - enabled: 1
+    path: Assets/Scenes/TimelapseScene.unity
+    guid: 69abbbefd2ac5e8479157f2097406ef1
+  - enabled: 1
+    path: Assets/Scenes/WaterfallScene.unity
+    guid: a801534d457f9a1488569421b6e2c75c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 62ac0bd81474b5e45ba398c385070922, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 246cc7759c8f1f34f820031684757a9c, type: 2}
