@@ -20,11 +20,13 @@ public class FadeScreen : MonoBehaviour
     public void FadeIn()
     {
         Fade(1, 0);
+        gameObject.SetActive(false);
     }
 
     public void FadeOut()
     {
         Fade(0, 1);
+        gameObject.SetActive(false);
     }
 
     public void Fade(float alphaIn, float alphaOut)
